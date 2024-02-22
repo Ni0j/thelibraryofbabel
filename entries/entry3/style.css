@@ -2,7 +2,7 @@ body{
   background-color: #010D00;;
     margin:0;
     margin-bottom: 10rem;
-  font-family: "Hepta Slab";
+    font-family: "Hepta Slab", sans-serif;
   overflow: hidden;
   
   }

@@ -1,6 +1,6 @@
 html, body{
   margin:0;
-font-family: "Hepta Slab";
+  font-family: "Hepta Slab", sans-serif;
 }
 
 * {

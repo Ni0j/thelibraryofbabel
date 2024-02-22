@@ -6,6 +6,7 @@ html{
 body{
   font-size:1.6rem;
   background: #010D00;
+  font-family: "Hepta Slab", sans-serif;
 }
 .menu{
   display: flex;
