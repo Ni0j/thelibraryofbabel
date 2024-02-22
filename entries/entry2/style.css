@@ -1,0 +1,601 @@
+body {
+  background-color: #010D00;
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: url('imgs/cursor.png'),auto;
+}
+
+
+.container, .flex-container {
+  padding-top: 250px; 
+  margin-left: 3rem;
+}
+
+#slider-value{
+  width: 100%;
+}
+
+.menu{
+  border-radius: 4px 9999px 9999px 3px;
+  border-bottom: 2px solid #FFF;
+  background: #BFA584;
+  box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+  display: flex;
+width: 313px;
+padding: 10.631px 21.262px;
+align-items: center;
+gap: 646.144px;
+  position:fixed;
+  z-index: 999;
+}
+
+.menu-left{
+  display: flex;
+  align-items: flex-start;
+  gap: 2.51013rem;
+}
+.name{
+  color: #FFF;
+font-family: Sepian;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+width: 196.087px;
+}
+
+.switch{
+  color: #FFF;
+font-family: Sepian;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+cursor: pointer;
+}
+
+.author{
+  color: #FFF;
+text-align: center;
+font-family: "Hepta Slab";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.author span{
+  color: #FFF;
+font-family: Sepian;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.intro{
+  color: #FFF;
+font-family: "Hepta Slab";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 13.25rem;
+}
+
+.extra-container{
+  border-radius: 0px 6px 45px 6px;
+  border-bottom: 2px solid #FFF;
+  background: #BFA584;
+  box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+display: inline-flex;
+padding: 0.5625rem 0.875rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.6875rem;
+z-index: 999;
+position:absolute;
+top:4.12rem;
+left:1.12rem;
+opacity:1;
+}
+
+.extra-container {
+  visibility: hidden;
+  opacity: 0; /* 添加 opacity 属性，使其淡出 */
+  transition: visibility 0s, opacity 0.5s ease-in-out; /* 添加过渡效果 */
+  /* your extra container styles */
+}
+
+/* 悬停时显示 */
+.name:hover ~ .extra-container {
+  visibility: visible;
+  opacity: 1; /* 添加 opacity 属性，使其淡入 */
+  transition-delay: 0s; /* 鼠标悬停时立即开始过渡 */
+}
+
+/* 鼠标离开后保持显示 2 秒钟 */
+.extra-container:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 2 秒钟后隐藏 */
+.extra-container:not(:hover) {
+  transition-delay: 2s; /* 添加延迟 2 秒钟 */
+  transition: opacity 1s ease-out;
+}
+
+a.name {
+  text-decoration: none; /* 去掉默认的下划线 */
+}
+
+.menu {
+  opacity: 1; /* 初始透明度为1 */
+  transition: opacity 2s;
+}
+
+.menu:not(:hover) {
+  opacity: 0; /* 当不处于鼠标悬停状态时，透明度为0 */
+}
+
+.menu:hover {
+  opacity: 1; /* 鼠标悬停时透明度为1 */
+}
+
+
+.background-color-1 {
+  background-color: #010D00; /* 第一种背景颜色 */
+}
+
+.background-color-2 {
+  background-color: #FFECD5; /* 第二种背景颜色 */
+}
+
+
+
+
+.background-color-change {
+  background-color: #FFECD5; /* 切换的背景颜色 */
+}
+
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  position: fixed !important;
+  transform: none !important;
+  top: 10px; 
+  right: 10px; 
+  z-index: 1000; 
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+
+#colorToggleButton {
+
+  top: 10px; 
+}
+
+#music {
+
+  top: 70px; 
+}
+
+.special {
+  position: fixed;
+  top: 130px; 
+  right: 10px; 
+  z-index: 1000; 
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#backtohome {
+  
+  top: 190px; 
+
+}
+
+
+body {
+  transition: filter 0.5s;
+}
+
+
+.invert {
+  filter: invert(100%);
+  background-color: #F0F0F0
+}
+
+
+
+.wrapper img {
+  position: absolute;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text, .text2{
+  color: #D94033;
+  leading-trim: both;
+  text-edge: cap;
+font-family: "Hepta Slab";
+font-size: 10.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.5625rem;
+margin-bottom: 8rem;
+}
+
+.text {
+  display: inline-block; /* 将容器设置为内联块元素，使其不换行 */
+}
+
+#number {
+  display: inline-block; /* 将数字部分设置为内联块元素 */
+  width: 1.8em; /* 固定宽度，以确保它不会变化 */
+}
+
+#years {
+  display: inline-block; /* 将 "years ago" 部分设置为内联块元素 */
+}
+
+.slider-container {
+  width: 90vw;
+  position: relative;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #F2B66D;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #D94033;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #D94033;
+  cursor: pointer;
+}
+
+#slider-value {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+
+
+
+.text2 {
+  font-size: 36pt;
+}
+
+.paragraph1 {
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 1.875rem;
+font-style: light;
+font-weight: 400;
+line-height: light;
+columns: 3;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  margin-top: 120px;
+
+}
+
+.paragraph2 {
+  color: #D94033;
+  font-family: "Hepta Slab";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  columns: 1;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 120px;
+  
+}
+
+ .paragraph3 {
+  position:absolute;
+  top:200rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0;
+} 
+
+.paragraph3:hover,
+.paragraph4:hover,
+.paragraph5:hover{
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+
+.paragraph4 {
+  position:absolute;
+  top:200rem;
+  left:31.4rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0;
+} 
+
+.paragraph5 {
+  position:absolute;
+  top:200rem;
+  left:60rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0;
+} 
+
+.file1{
+  position:absolute;
+  top:190rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.file2{
+  position:absolute;
+  top:190rem;
+  left:31.4rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.file3{
+  position:absolute;
+  top:190rem;
+  left:60rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: "Hepta Slab";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.quote1-1{
+  position:absolute;
+  top:190rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: Sepian;
+font-size: 15rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.quote1-2{
+  position:absolute;
+  top:210rem;
+  left:23rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: Sepian;
+font-size: 15rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.quote2-1{
+  position:absolute;
+  top:190rem;
+  left:31.4rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: Sepian;
+font-size: 15rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.quote2-2{
+  position:absolute;
+  top:210rem;
+  left:53rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: Sepian;
+font-size: 15rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.quote3-1{
+  position:absolute;
+  top:190rem;
+  left:60rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: Sepian;
+font-size: 15rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.quote3-2{
+  position:absolute;
+  top:210rem;
+  left:81rem;
+  max-width: 24.375rem;
+  columns:1;
+  color: #D94033;
+font-family: Sepian;
+font-size: 15rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+.paragraphen1 {
+  font-size: 18pt;
+  columns: 3; 
+  column-gap: 0.25in;
+  break-inside: avoid; 
+  margin-top: 120px;
+}
+
+.paragraphen2 {
+  font-size: 18pt;
+  columns: 3;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  margin-top: 120px;  
+}
+
+ .paragraphen3 {
+  font-size: 18pt;
+  columns: 3;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  margin-top: 120px;  
+} 
+
+.paragraphen4 {
+  font-size: 18pt;
+  columns: 3;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  margin-top: 120px;  
+} 
+
+.paragraphen5 {
+  font-size: 18pt;
+  columns: 3;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  margin-top: 120px;  
+  margin-bottom: 120px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

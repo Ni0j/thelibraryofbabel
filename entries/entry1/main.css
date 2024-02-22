@@ -1,0 +1,1028 @@
+html{
+  font-size:10px;
+  box-sizing: border-box;
+}
+
+body{
+  font-size:1.6rem;
+  background: #010D00;
+}
+.menu{
+  display: flex;
+width: 313px;
+padding: 10.631px 21.262px;
+align-items: center;
+gap: 646.144px;
+  position:fixed;
+  z-index: 999;
+  border-radius: 0.25rem 624.9375rem 624.9375rem 0.1875rem;
+border-bottom: 2px solid #FFF;
+background: #BFA584;
+box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+}
+
+.menu-left{
+  display: flex;
+align-items: flex-start;
+gap: 90.162px;
+}
+.name{
+  color: #FFF;
+  font-family: Sepian;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02069rem;
+  cursor:pointer;
+}
+
+.switch{
+  color: #FFF;
+font-family: Sepian;
+font-size:24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+cursor: pointer;
+
+}
+
+.background-color-1 {
+  background-color: #010D00; /* 第一种背景颜色 */
+}
+
+.background-color-2 {
+  background-color: #FFECD5; /* 第二种背景颜色 */
+}
+
+
+
+
+.background-color-change {
+  background-color: #FFECD5; /* 切换的背景颜色 */
+}
+
+
+.author{
+  color: #FFF;
+text-align: center;
+font-family: "Hepta Slab";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.author span{
+  color: #FFF;
+  font-family: Sepian;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.intro{
+  color: #FFF;
+font-family: "Hepta Slab";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 212px;
+}
+
+.extra-container{
+  border-radius: 0px 6px 45px 6px;
+border-bottom: 2px solid #FFF;
+background: #BFA584;
+box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+  display: flex;
+  padding: 9px 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 27px;
+z-index: 999;
+position:absolute;
+top:67.26px;
+left:20.5px;
+opacity:1;
+}
+
+.extra-container {
+  visibility: hidden;
+  opacity: 0; /* 添加 opacity 属性，使其淡出 */
+  transition: visibility 0s, opacity 0.5s ease-in; 
+  /* your extra container styles */
+}
+
+/* 悬停时显示 */
+.name:hover ~ .extra-container {
+  visibility: visible;
+  opacity: 1; /* 添加 opacity 属性，使其淡入 */
+  transition-delay: 0s; /* 鼠标悬停时立即开始过渡 */
+}
+
+/* 鼠标离开后保持显示 2 秒钟 */
+.extra-container:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 2 秒钟后隐藏 */
+.extra-container:not(:hover) {
+  /* transition-delay: 2s;  */
+  /* transition: opacity 1s ease-out; */
+}
+
+.menu {
+  opacity: 1; /* 初始透明度为1 */
+  transition: opacity 2s;
+}
+
+.menu:not(:hover) {
+  opacity: 0; /* 当不处于鼠标悬停状态时，透明度为0 */
+}
+
+.menu:hover {
+  opacity: 1; /* 鼠标悬停时透明度为1 */
+}
+
+a.name {
+  text-decoration: none; /* 去掉默认的下划线 */
+}
+.hlt{
+  color:#D94033;
+  opacity: 1;
+  font-size: 14px;
+  font-family: "Hepta";
+}
+
+.test{
+  width: 40vw;
+  height: 80vh;
+  border: #D94033;
+  overflow: hidden;
+}
+
+
+.flex-container{
+  display: flex;
+}
+
+.text-group1{
+  position:absolute;
+  top: 145px;
+  left: 174px;
+  width:322px;
+}
+
+.universe-text {
+  width: 100%;
+}
+
+.library-label {
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.library-name {
+  color: #D94033;
+  font-size: 18px;
+  font-family: Sepian;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+
+.infinite-number1 {
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number2 {
+  position:absolute;
+  top: 315px;
+  left: 8.5rem;
+  transform: rotate(-60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number3 {
+  position:absolute;
+  top: 45.7rem;
+  left: 15.5rem;
+  transform: rotate(-120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+
+.infinite-number4 {
+  position:absolute;
+  top: 189px;
+  left: 33rem;
+  transform: rotate(60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number5 {
+  position:absolute;
+  top: 33rem;
+  left: 40rem;
+  transform: rotate(120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number6 {
+  position:absolute;
+  top: 46rem;
+  left: 31.5rem;
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number7 {
+  position:absolute;
+  top: 44rem;
+  left: 33.5rem;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number8 {
+  position:absolute;
+  top: 580px;
+  left: 24rem;
+  transform: rotate(-60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number9 {
+  position:absolute;
+  top: 450px;
+  left: 49rem;
+  transform: rotate(60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number10 {
+  position:absolute;
+  top: 72rem;
+  left: 31rem;
+  transform: rotate(-120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number11 {
+  position:absolute;
+  top: 59rem;
+  left: 56rem;
+  transform: rotate(120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number12 {
+  position:absolute;
+  top: 72rem;
+  left: 47rem;
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number13 {
+  position:absolute;
+  top: 70rem;
+  left: 49.5rem;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number14 {
+  position:absolute;
+  top: 840px;
+  left: 40rem;
+  transform: rotate(-60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number15 {
+  position:absolute;
+  top: 717px;
+  left: 65rem;
+  transform: rotate(60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number16 {
+  position:absolute;
+  top: 98rem;
+  left: 47rem;
+  transform: rotate(-120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number17 {
+  position:absolute;
+  top: 86rem;
+  left: 72rem;
+  transform: rotate(120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number18 {
+  position:absolute;
+  top: 99rem;
+  left: 63rem;
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number19 {
+  position:absolute;
+  top: 97rem;
+  left: 65.4rem;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number20 {
+  position:absolute;
+  top: 111rem;
+  left: 55.7rem;
+  transform: rotate(-60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number21 {
+  position:absolute;
+  top: 98rem;
+  left: 81rem;
+  transform: rotate(60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number22 {
+  position:absolute;
+  top: 125rem;
+  left: 62.3rem;
+  transform: rotate(-120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number23 {
+  position:absolute;
+  top: 112rem;
+  left: 88.4rem;
+  transform: rotate(120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number24 {
+  position:absolute;
+  top: 126rem;
+  left: 79rem;
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number25 {
+  position:absolute;
+  top: 124rem;
+  left: 81rem;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number26 {
+  position:absolute;
+  top: 138rem;
+  left: 71.7rem;
+  transform: rotate(-60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number27 {
+  position:absolute;
+  top: 125.4rem;
+  left: 96.4rem;
+  transform: rotate(60deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number28 {
+  position:absolute;
+  top: 152rem;
+  left: 78.5rem;
+  transform: rotate(-120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number29 {
+  position:absolute;
+  top: 140rem;
+  left: 103.4rem;
+  transform: rotate(120deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.infinite-number30 {
+  position:absolute;
+  top: 153rem;
+  left: 94.4rem;
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.text-group2 {
+  width: 100%;
+  color: #D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+  word-wrap: break-word;
+  position:absolute;
+  top: 1510px;
+  left: 805px;
+  width:322px;
+}
+
+
+.flex-container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.paragraph1 {
+  position: absolute;
+  width: 324px;
+  top:180rem;
+  left:80rem;
+  font-size: 18pt;
+  columns: 1;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  color:#D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+}
+
+.paragraph3{
+  position: absolute;
+  top:200rem;
+  left:80rem;
+  font-size: 18pt;
+  break-inside: avoid;
+  color:#D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+}
+
+.each2{
+  opacity: 0;
+}
+
+.each2:hover,
+.each2:hover + span {
+  opacity:1;
+}
+
+.infinite-number1,
+.infinite-number2,
+.infinite-number3,
+.infinite-number4,
+.infinite-number5,
+.infinite-number6,
+.infinite-number7,
+.infinite-number8,
+.infinite-number9,
+.infinite-number10,
+.infinite-number11,
+.infinite-number12,
+.infinite-number13,
+.infinite-number14,
+.infinite-number15,
+.infinite-number16,
+.infinite-number17,
+.infinite-number18,
+.infinite-number19,
+.infinite-number20,
+.infinite-number21,
+.infinite-number22,
+.infinite-number23,
+.infinite-number24,
+.infinite-number25,
+.infinite-number26,
+.infinite-number27,
+.infinite-number28,
+.infinite-number29,
+.infinite-number30{ 
+  animation: blink 7s infinite;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.lamp-div {
+  position:absolute;
+  top:280rem;
+  left:68rem;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #F2B66D;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  margin:150px auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: lamp;
+  -webkit-animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes lamp {
+  0% {
+      opacity: .4;
+      box-shadow: 0 1px 2px rgba(193, 223, 0, 0.4), 0 1px 1px rgba(223, 208, 0, 0.1) inset;
+  }
+
+  100% {
+      opacity: 1;
+      border: 1px solid rgba(235, 232, 59, 0.7);
+      box-shadow: 0 1px 30px #cddf00, 0 1px 20px #dfdb00 inset;
+  }
+}
+
+
+.paragraph4 {
+  position: absolute;
+  width: 324px;
+  top:240rem;
+  left:80rem;
+  font-size: 18pt;
+  columns: 1;
+  column-gap: 0.25in;
+  break-inside: avoid;
+  color:#D94033;
+  font-size: 14px;
+  font-family: Hepta Slab;
+  font-weight: 400;
+}
+
+
+/* 
+.switch::after {
+  content: attr(data-original);
+}
+
+.switch:hover::after {
+  content: "20";
+  pointer-events: none; 
+} */
+
+
+
+.shell {
+  position: absolute;
+  top:400%;
+  right: 0rem;
+  width: 49%;
+  /* 设置外层容器的宽度为100% */
+  height: 100vh;
+  /* 设置外层容器的高度为视口高度 */
+  display: flex;
+  /* 设置外层容器为flex布局 */
+  align-items: center;
+  /* 垂直居中对齐 */
+  justify-content: center;
+  background-size: cover;
+  /* 背景图片等比例缩放铺满容器 */
+}
+
+/* 设置显示密码时的样式 */
+body.show-password {
+  --bgColor:#010D00;
+  /* 设置背景颜色变量为RGBA(0, 0, 0, 0.9) */
+  --inputColor: white;
+  /* 设置输入框颜色变量为白色 */
+}
+
+
+/* 设置表单样式 */
+form {
+  transform: translate3d(0, 0, 0);
+  /* 3D变换，无位移 */
+  padding: 50px;
+  /* 设置内边距为10px */
+  border-radius: 10px;
+}
+
+form>*+* {
+  margin-top: 15px;
+  /* 设置相邻元素之间的上边距为15px */
+}
+
+.form-item>*+* {
+  margin-top: 0.5rem;
+  /* 设置相邻元素之间的上边距为0.5rem */
+}
+
+/* 设置label, input, button样式 */
+h2,
+label,
+input,
+button {
+  font-size: 14px;
+  /* 设置字体大小为2rem */
+  color: var(--inputColor);
+  /* 设置字体颜色为变量--inputColor的值 */
+  font-family: "Hepta Slab";
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: sepian;
+  margin: 0;
+}
+
+label:focus,
+input:focus,
+button:focus {
+  outline-offset: 2px;
+  /* 设置聚焦时的外边距为2px */
+}
+
+label::-moz-focus-inner,
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: none;
+  /* 去掉Firefox浏览器的聚焦时的内边框 */
+}
+
+/* 设置密码相关样式 */
+label[id=password],
+input[id=password],
+button[id=password] {
+  color: #D94033;
+  /* yinxingyufou*/
+}
+
+/* 设置按钮样式 */
+button {
+  border: none;
+  /* 去掉按钮的边框 */
+}
+
+[id=submit] {
+  width: 100%;
+  cursor: pointer;
+  /* 设置鼠标样式为手型 */
+  margin: 20px 0 0 2px;
+  /* 设置外边距为20px 0 0 2px */
+  padding: 0.75rem 1.25rem;
+  /* 设置内边距为0.75rem 1.25rem */
+  color: var(--bgColor);
+  /* 设置字体颜色为变量--bgColor的值 */
+  background-color: var(--inputColor);
+  /* 设置背景颜色为变量--inputColor的值 */
+  /* box-shadow: 4px 4px 0 rgba(30, 144, 255, 0.2); */
+  /* 设置阴影效果 */
+}
+
+[id=submit]:active {
+  transform: translateY(1px);
+  /* 设置点击时向下位移1px */
+}
+
+/* 设置输入框包裹器样式 */
+.input-wrapper {
+  position: relative;
+  /* 设置相对定位 */
+}
+
+/* 设置输入框样式 */
+input {
+  padding: 0.75rem 4rem 0.75rem 0.75rem;
+  /* 设置内边距为0.75rem 4rem 0.75rem 0.75rem */
+  width: 100%;
+  /* 设置宽度为100% */
+  border: 2px solid transparent;
+  /* 设置边为2px透明 */
+  border-radius: 0;
+  /* 设置边框圆角为0 */
+  background-color: transparent;
+  /* 设置背景颜色为透明 */
+  /* box-shadow: inset 0 0 0 2px black, inset 6px 6px 0 rgba(30, 144, 255, 0.2), 3px 3px 0 rgba(30, 144, 255, 0.2); */
+  /* 设置阴影效果 */
+  -webkit-appearance: none;
+  /* 去掉Webkit浏览器的默认样式 */
+}
+
+input:focus {
+  outline-offset: 1px;
+  /* 设置聚焦时的外边距为1px */
+}
+
+/* 设置显示密码时的输入框样式 */
+.show-password input {
+  /* 设置阴影效果 */
+  /* border: 2px dashed white; */
+  /* 设置边框为2px虚线白色 */
+}
+
+.show-password input:focus {
+  outline: none;
+  /* 去掉聚焦时的外边框 */
+  border-color: #FFF;
+  /* 设置边框颜色为RGB(255, 255, 145) */
+}
+
+/* 设置眼睛按钮样式 */
+[id=eyeball] {
+  --size: 1.25rem;
+  /* 设置变量--size的值为1.25rem */
+  display: flex;
+  /* 设置为flex布局 */
+  align-items: center;
+  /* 垂直居中对齐 */
+  justify-content: center;
+  /* 水平居中对齐 */
+  cursor: pointer;
+  /* 设置鼠标样式为手型 */
+  outline: none;
+  /* 去掉聚焦时的外边框 */
+  position: absolute;
+  /* 设置绝对定位 */
+  top: 50%;
+  /* 设置顶部距离为50% */
+  right: 0.75rem;
+  /* 设置右侧距离为0.75rem */
+  border: none;
+  /* 去掉边框 */
+  background-color: transparent;
+  /* 设置背景颜色为透明 */
+  transform: translateY(-50%);
+  /* 设置向上位移50% */
+}
+
+[id=eyeball]:active {
+  transform: translateY(calc(-50% + 1px));
+  /* 设置点击时向上位移50% + 1px */
+}
+
+.eye {
+  width: var(--size);
+  /* 设置宽度为变量--size的值 */
+  height: var(--size);
+  /* 设置高度为变量--size的值 */
+  border: 2px solid var(--inputColor);
+  /* 设置边框为2px实线，颜色为变量--inputColor的值 */
+  border-radius: calc(var(--size) / 1.5) 0;
+  /* 设置边框圆角为变量--size的值除以1.5，0 */
+  transform: rotate(45deg);
+  /* 设置旋转45度 */
+}
+
+.eye:before,
+.eye:after {
+  content: "";
+  /* 清空内容 */
+  position: absolute;
+  /* 设置绝对定位 */
+  top: 0;
+  /* 设置顶部距离为0 */
+  right: 0;
+  /* 设置右侧距离为0 */
+  bottom: 0;
+  /* 设置底部距离为0 */
+  left: 0;
+  /* 设置左侧距离为0 */
+  margin: auto;
+  /* 设置自动外边距 */
+  border-radius: 100%;
+  /* 设置边框圆角为100% */
+}
+
+.eye:before {
+  width: 35%;
+  /* 设置宽度为35% */
+  height: 35%;
+  /* 设置高度为35% */
+  background-color: var(--inputColor);
+  /* 设置背景颜色为变量--inputColor的值 */
+}
+
+.eye:after {
+  width: 65%;
+  /* 设置宽度为65% */
+  height: 65%;
+  /* 设置高度为65% */
+  border: 2px solid var(--inputColor);
+  /* 设置边框为2px实线，颜色为变量--inputColor的值 */
+  border-radius: 100%;
+  /* 设置边框圆角为100% */
+}
+
+/* 设置光束样式 */
+[id=beam] {
+  position: absolute;
+  /* 设置绝对定位 */
+  top: 50%;
+  /* 设置顶部距离为50% */
+  right: 1.75rem;
+  /* 设置右侧距离为1.75rem */
+  clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+  /* 设置剪切路径为多边形 */
+  width: 100vw;
+  /* 设置宽度为100vw */
+  height: 25vw;
+  /* 设置高度为25vw */
+  z-index: 1;
+  /* 设置层级为1 */
+  mix-blend-mode: multiply;
+  /* 设置混合模式为multiply */
+  transition: transform 200ms ease-out;
+  /* 设置过渡效果为200ms的ease-out */
+  transform-origin: 100% 50%;
+  /* 设置变换原点为右侧50% */
+  transform: translateY(-50%) rotate(var(--beamDegrees, 0));
+  /* 设置向上位移50%并旋转--beamDegrees度 */
+  pointer-events: none;
+  /* 禁用指针事件 */
+}
+
+.show-password [id=beam] {
+  background: rgb(255, 255, 145);
+  /* 设置背景颜色为RGB(255, 255, 145) */
+} 
+
+/* 设置全局样式 */
+* {
+  box-sizing: border-box;
+  transition: .2s;
+}
+
+/* 设置根元素变量 */
+:root {
+  --inputColor:#D94033;
+  /* 设置输入框颜色变量为黑色 */
+  --outlineColor: #010D00;
+  --border: black;
+}
+

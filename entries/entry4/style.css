@@ -1,0 +1,352 @@
+html, body{
+  margin:0;
+font-family: "Hepta Slab";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #010D00;
+  min-width:375px;
+}
+
+.grid{
+  margin-left: 20rem;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding:40px;
+  margin-left: 2rem;
+}
+
+
+.menu{
+  display: flex;
+  width: 19.5625rem;
+  padding: 0.66444rem 1.32888rem;
+  align-items: center;
+  gap: 40.384rem;
+  position:fixed;
+  z-index: 999;
+  border-radius: 0.25rem 624.9375rem 624.9375rem 0.1875rem;
+border-bottom: 2px solid #FFF;
+background: #BFA584;
+box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+}
+
+.menu-left{
+  display: flex;
+align-items: flex-start;
+gap: 2.51013rem;
+}
+.name{
+  color: #FFF;
+  font-family: Sepian;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02069rem;
+  width: 12.25544rem;
+  cursor:pointer;
+}
+
+.switch{
+  color: #FFF;
+font-family: Sepian;
+font-size:24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.02069rem;
+cursor: pointer;
+
+}
+
+.background-color-1 {
+  background-color: #010D00; /* 第一种背景颜色 */
+}
+
+.background-color-2 {
+  background-color: #FFECD5; /* 第二种背景颜色 */
+}
+
+
+
+
+.background-color-change {
+  background-color: #FFECD5; /* 切换的背景颜色 */
+}
+
+.menu {
+  opacity: 1; /* 初始透明度为1 */
+  transition: opacity 2s;
+}
+
+.menu:not(:hover) {
+  opacity: 0; /* 当不处于鼠标悬停状态时，透明度为0 */
+}
+
+.menu:hover {
+  opacity: 1; /* 鼠标悬停时透明度为1 */
+}
+
+
+
+.author{
+  color: #FFF;
+text-align: center;
+font-family: "Hepta Slab";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.author span{
+  color: #FFF;
+font-family: Sepian;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.intro{
+  color: #FFF;
+font-family: "Hepta Slab";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 13.25rem;
+}
+
+.extra-container{
+  border-radius: 0.375rem 0.375rem 2.8125rem 0.375rem;
+  border-bottom: 2px solid #FFF;
+  background: #BFA584;
+  box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+display: inline-flex;
+padding: 0.5625rem 0.875rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.6875rem;
+z-index: 999;
+position:absolute;
+top:4.12rem;
+left:1.12rem;
+opacity:1;
+}
+
+.extra-container {
+  visibility: hidden;
+  opacity: 0; /* 添加 opacity 属性，使其淡出 */
+  transition: visibility 0s, opacity 0.5s ease-in-out; /* 添加过渡效果 */
+  /* your extra container styles */
+}
+
+/* 悬停时显示 */
+.name:hover ~ .extra-container {
+  visibility: visible;
+  opacity: 1; /* 添加 opacity 属性，使其淡入 */
+  transition-delay: 0s; /* 鼠标悬停时立即开始过渡 */
+}
+
+/* 鼠标离开后保持显示 2 秒钟 */
+.extra-container:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 2 秒钟后隐藏 */
+.extra-container:not(:hover) {
+  transition-delay: 2s; /* 添加延迟 2 秒钟 */
+  transition: opacity 1s ease-out;
+}
+
+a.name {
+  text-decoration: none; /* 去掉默认的下划线 */
+}
+
+
+.row{
+  display: flex;
+}
+
+.pro-card-wrapper1{
+  perspective: 3600px;
+}
+
+.pro-card-wrapper2{
+  perspective: 3000px;
+}
+
+.pro-card-wrapper3{
+  perspective: 2400px;
+}
+
+.pro-card-wrapper4{
+  perspective: 1800px;
+}
+
+.pro-card-wrapper5{
+  perspective: 1200px;
+}
+
+
+.pro-card1{
+  display: flex;
+  width: 21rem;
+  height: 37.6875rem;
+  padding: 1.875rem 0.625rem 2.3125rem 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  margin:4px;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  transition:transform 0.8s;
+  transform-style:preserve-3d;
+  
+}
+
+.pro-card2{
+  display: flex;
+width: 21rem;
+height: 37.6875rem;
+padding: 1.875rem 0.625rem 2.3125rem 0.625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+flex-shrink: 0;
+  margin:4px;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  transition:transform 0.8s;
+  transform-style:preserve-3d;
+}
+
+.pro-card3{
+  display: flex;
+width: 21rem;
+height: 37.6875rem;
+padding: 1.875rem 0.625rem 2.3125rem 0.625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+flex-shrink: 0;
+  margin:4px;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  transition:transform 0.8s;
+  transform-style:preserve-3d;
+}
+
+.pro-card4{
+  display: flex;
+width: 21rem;
+height: 37.6875rem;
+padding: 1.875rem 0.625rem 2.3125rem 0.625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+flex-shrink: 0;
+  margin:4px;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  transition:transform 0.8s;
+  transform-style:preserve-3d;
+}
+
+.pro-card5{
+  display: flex;
+width: 21rem;
+height: 37.6875rem;
+padding: 1.875rem 0.625rem 2.3125rem 0.625rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+flex-shrink: 0;
+  margin:4px;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  transition:transform 0.8s;
+  transform-style:preserve-3d;
+}
+
+
+.character{
+  color: #D94033;
+font-family: Sepian;
+font-size: 10rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.romaji{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.15rem;
+}
+
+.front,
+.back{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border:1px solid #D94033;
+  color:#D94033;
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+.pro-card-wrapper1:hover .pro-card1{
+  transform: rotateY(180deg);
+}
+
+.pro-card-wrapper2:hover .pro-card2{
+  transform: rotateY(180deg);
+}
+
+.pro-card-wrapper3:hover .pro-card3{
+  transform: rotateY(180deg);
+}
+
+.pro-card-wrapper4:hover .pro-card4{
+  transform: rotateY(180deg);
+}
+
+.pro-card-wrapper5:hover .pro-card5{
+  transform: rotateY(180deg);
+}
+
+
+
+
+@media screen and (max-width:960px){
+  .pro-card{
+    width:300px;
+    height: 500px;
+    font-size: 8px;
+  }
+}
