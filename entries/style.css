@@ -1,4 +1,4 @@
-body{
+ body{
 background-color: #010D00;;
   margin:0;
   margin-bottom: 10rem;
@@ -50,7 +50,9 @@ line-height: normal;
 
 .author span{
   color: #FFF;
-font-family: Sepian;
+  font-family: "sepian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 font-size: 1.5rem;
 font-style: normal;
 font-weight: 400;
@@ -214,7 +216,9 @@ gap: 2.51013rem;
 }
 .name{
   color: #FFF;
-  font-family: Sepian;
+  font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -226,7 +230,9 @@ gap: 2.51013rem;
 
 .switch{
   color: #FFF;
-font-family: Sepian;
+  font-family: "sepian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 font-size:24px;
 font-style: normal;
 font-weight: 400;
@@ -262,15 +268,4 @@ cursor: pointer;
 
 .menu:hover {
   opacity: 1; /* 鼠标悬停时透明度为1 */
-}
-
-
-.location{
-  /* color: #FFF;
-font-family: Sepian;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.0175rem; */
 }

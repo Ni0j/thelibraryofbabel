@@ -28,7 +28,9 @@ gap: 90.162px;
 }
 .name{
   color: #FFF;
-  font-family: Sepian;
+  font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -39,7 +41,9 @@ gap: 90.162px;
 
 .switch{
   color: #FFF;
-font-family: Sepian;
+  font-family: "sepian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 font-size:24px;
 font-style: normal;
 font-weight: 400;
@@ -77,7 +81,9 @@ line-height: normal;
 
 .author span{
   color: #FFF;
-  font-family: Sepian;
+  font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -194,7 +200,9 @@ a.name {
 .library-name {
   color: #D94033;
   font-size: 18px;
-  font-family: Sepian;
+  font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -797,7 +805,9 @@ button {
 
 h2 {
   font-size: 4rem;
-  font-family: sepian;
+  font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
   margin: 0;
 }
 
