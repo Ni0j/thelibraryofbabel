@@ -10,7 +10,9 @@ body {
   font-family: "Hepta Slab", sans-serif;
 }
 
-
+.mobile{
+  display: none;
+}
 .container, .flex-container {
   padding-top: 250px; 
   margin-left: 3rem;
@@ -609,6 +611,258 @@ line-height: normal;
 
 
 
+@media screen and (max-width: 375px){
+  .laptop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+  
+  .title-m{
+  font-family: "sepian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F0F0F0;
+  text-align: center;
+  font-size: 16px;
+  line-height: normal;
+  position: absolute;
+left: 22px;
+top: 2px;
+width: 55px;
+z-index: 999;
+  }
+  
+  .switch-m{
+    color: #F0F0F0;
+  font-family: "Hepta Slab";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 45px;
+  top: 38px;
+  transform: rotate(180deg);
+  z-index: 999;
+  }
+  
+  .tag-m{
+    position: absolute;
+    top:-20px;
+    width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  fill: #D94033;
+  }
+  
+  .hex-m{
+position: absolute;
+top:30%;
+left:150px;
+  }
+
+  .quote-container-m{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2px;
+position: absolute;
+top:298px;
+left: 31px;
+height: 136px;
+  }
+
+  .decoline1-m{
+    width: 232px;
+position: absolute;
+margin-top: 0;
+left: 40.5px;
+z-index: 888;
+stroke-width: 1px;
+stroke: #D94033;
+  }
+
+  .decoline2-m{
+    width: 232px;
+position: absolute;
+top:118px;
+left: 40.5px;
+stroke-width: 1px;
+stroke: #D94033;
+left: 40.5px;
+z-index: 888;
+  }
+
+  .quote{
+   justify-content: center;
+   align-items: center;
+    position: absolute;
+    left:100px;
+    top:40px;
+    color: #D94033;
+font-family: Sepian;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.16px;
+width: 129px;
+z-index: 9999;
+  }
+
+  .line-op-m{
+    display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2px;
+position: absolute;
+top:804px;
+left:63.5px;
+width: 248px;
+height: 0px;
+  }
+
+
+.grid-container-m{
+  grid-template-columns: repeat(8, 1Fr);
+  position: relative;
+}
+
+.para1-m{
+  grid-column: span 6;
+  color: #D94033;
+font-family: "Prestige Elite Std";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.36px;
+width: 224px;
+margin:0 auto;
+margin-top:904px;
+}
+
+.para2-m{
+  grid-column: span 6;
+  color: #D94033;
+font-family: "Prestige Elite Std";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.36px;
+width: 224px;
+margin:0 auto;
+margin-top:100px;
+}
+
+.line-mid-m{
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2px;
+position: absolute;
+top:1406px;
+left:63.5px;
+width: 248px;
+height: 0px;
+}
+
+.para3-m{
+  grid-column: span 6;
+  background: linear-gradient(180deg, #D94033 37%, #4E4E4E 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+font-family: "Prestige Elite Std";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.36px;
+width: 224px;
+margin:0 auto;
+margin-top:200px;
+}
+
+.para4-m{
+  grid-column: span 6;
+  background: linear-gradient(180deg, #E97A71 0%, #FF1400 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Prestige Elite Std";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.36px;
+width: 224px;
+margin:0 auto;
+margin-top:100px;
+}
+
+.para5-m{
+  grid-column: span 6;
+  color: #D94033;
+font-family: "Prestige Elite Std";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.36px;
+width: 224px;
+margin:0 auto;
+margin-top:100px;
+}
+
+
+.line-ed-m{
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2px;
+position: absolute;
+top:2450px;
+left:63.5px;
+width: 248px;
+height: 0px;
+}
+
+
+
+
+body{
+
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
+.gradient-m{
+  background: linear-gradient(180deg, #000 0%, #440C0C 53.5%, #000 100%);
+filter: blur(2px);
+width: 375px;
+height: 218px;
+flex-shrink: 0;
+position: fixed;
+top:530px;
+}
+
+.title,
+.switch,
+.tag{
+  display: none;
+}
+    
+}
 
 
 
