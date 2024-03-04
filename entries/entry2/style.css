@@ -23,48 +23,55 @@ body {
 }
 
 .menu{
-  border-radius: 4px 9999px 9999px 3px;
-  border-bottom: 2px solid #FFF;
-  background: #BFA584;
-  box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
-  display: flex;
-width: 313px;
-padding: 10.631px 21.262px;
+position: fixed;
+z-index: 999;
+}
+
+.left{
+  stroke-width: 1px;
+  stroke: #D94033;
+  width: 35px;
+position: absolute;
+top:505%;
+left:620px;
+}
+
+.back-container{
+  padding-bottom: 20rem;
+  display: inline-flex;
+justify-content: center;
 align-items: center;
-gap: 646.144px;
-  position:fixed;
-  z-index: 999;
+gap: 32px;
 }
 
-.menu-left{
-  display: flex;
+.right{
+  stroke-width: 1px;
+  stroke: #D94033;
+  width: 35px;
+position: absolute;
+top:505%;
+left:870px;
+}
+
+
+
+.hex {
+  flex-direction: column;
   align-items: flex-start;
-  gap: 2.51013rem;
-}
-.name{
-  color: #FFF;
-  font-family: "sepian", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
-width: 196.087px;
+  position: absolute;
+  top: 500%;
+  left: 722px;
+  animation: rotateAnimation 3s infinite linear;
+  transform-origin: center; 
 }
 
-.switch{
-  color: #FFF;
-  font-family: "sepian", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
-cursor: pointer;
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .author{
@@ -99,10 +106,9 @@ width: 13.25rem;
 }
 
 .extra-container{
-  border-radius: 0px 6px 45px 6px;
-  border-bottom: 2px solid #FFF;
-  background: #BFA584;
-  box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+  border-top: 2px solid #FFF;
+border-bottom: 2px solid #FFF;
+background: #D94033;
 display: inline-flex;
 padding: 0.5625rem 0.875rem;
 flex-direction: column;
@@ -110,53 +116,64 @@ align-items: flex-start;
 gap: 1.6875rem;
 z-index: 999;
 position:absolute;
-top:4.12rem;
+top:8.12rem;
 left:1.12rem;
 opacity:1;
 }
 
+/* 额外内容初始状态隐藏 */
 .extra-container {
   visibility: hidden;
-  opacity: 0; /* 添加 opacity 属性，使其淡出 */
-  transition: visibility 0s, opacity 0.5s ease-in-out; /* 添加过渡效果 */
-  /* your extra container styles */
-}
-
-/* 悬停时显示 */
-.name:hover ~ .extra-container {
-  visibility: visible;
-  opacity: 1; /* 添加 opacity 属性，使其淡入 */
-  transition-delay: 0s; /* 鼠标悬停时立即开始过渡 */
-}
-
-/* 鼠标离开后保持显示 2 秒钟 */
-.extra-container:hover {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* 2 秒钟后隐藏 */
-.extra-container:not(:hover) {
-  transition-delay: 2s; /* 添加延迟 2 秒钟 */
+  opacity: 0;
   transition: opacity 1s ease-out;
+}
+
+
+.title{
+  color: #F0F0F0;
+text-align: center;
+font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 32px;
+line-height: normal;
+position: absolute;
+left: 54px;
+top: 6px;
+width: 110px;
+z-index: 999;
+cursor: pointer;
+}
+
+.switch{
+  color: #F0F0F0;
+font-family: "Hepta Slab";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute;
+left: 101px;
+top: 88px;
+transform: rotate(180deg);
+z-index: 999;
+cursor: pointer;
+}
+
+.tag{
+  position: absolute;
+  top:-40px;
+  left: 10px;
+width: 200px;
+height: 200px;
+z-index: 998;
+
 }
 
 a.name {
   text-decoration: none; /* 去掉默认的下划线 */
 }
 
-.menu {
-  opacity: 1; /* 初始透明度为1 */
-  transition: opacity 2s;
-}
-
-.menu:not(:hover) {
-  opacity: 0; /* 当不处于鼠标悬停状态时，透明度为0 */
-}
-
-.menu:hover {
-  opacity: 1; /* 鼠标悬停时透明度为1 */
-}
 
 
 .background-color-1 {
@@ -200,35 +217,8 @@ a.name {
 
 
 
-#colorToggleButton {
 
-  top: 10px; 
-}
 
-#music {
-
-  top: 70px; 
-}
-
-.special {
-  position: fixed;
-  top: 130px; 
-  right: 10px; 
-  z-index: 1000; 
-  border: 2px solid #fff;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-#backtohome {
-  
-  top: 190px; 
-
-}
 
 
 body {
@@ -297,6 +287,7 @@ margin-bottom: 8rem;
 .slider-container {
   width: 90vw;
   position: relative;
+  z-index: 1;
 }
 
 .slider {
@@ -309,6 +300,8 @@ margin-bottom: 8rem;
   opacity: 1;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  position: relative;
+  z-index:1;
 }
 
 .slider::-webkit-slider-thumb {
@@ -375,7 +368,10 @@ columns: 3;
   top:200rem;
   max-width: 24.375rem;
   columns:1;
-  color: #D94033;
+  background: linear-gradient(180deg, #D94033 37%, #4E4E4E 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 font-family: "Hepta Slab";
 font-size: 0.875rem;
 font-style: normal;
@@ -398,7 +394,10 @@ opacity: 0;
   left:31.4rem;
   max-width: 24.375rem;
   columns:1;
-  color: #D94033;
+  background: linear-gradient(180deg, #E97A71 0%, #FF1400 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 font-family: "Hepta Slab";
 font-size: 0.875rem;
 font-style: normal;
@@ -662,6 +661,38 @@ z-index: 999;
 position: absolute;
 top:30%;
 left:150px;
+animation: rotateAnimation 3s infinite linear;
+  }
+
+  .back-container-m{
+    padding-bottom: 20rem;
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  height: 500px;
+  }
+
+  .left-m{
+    stroke-width: 1px;
+    stroke: #D94033;
+    width: 35px;
+  position: absolute;
+  top:400%;
+  left:100px;
+  margin-bottom: 100px;
+  }
+  
+
+  
+  .right-m{
+    stroke-width: 1px;
+    stroke: #D94033;
+    width: 35px;
+  position: absolute;
+  top:400%;
+  right:100px;
+  margin-bottom: 100px;
   }
 
   .quote-container-m{

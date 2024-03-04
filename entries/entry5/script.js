@@ -62,3 +62,22 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var toggleButton = document.getElementById("toggleButton");
+  var extraContainer = document.querySelector(".extra-container");
+
+
+  toggleButton.addEventListener("click", function() {
+    var computedStyle = window.getComputedStyle(extraContainer);
+
+    if (computedStyle.visibility === "visible" || extraContainer.style.visibility === "visible") {
+      extraContainer.style.visibility = "hidden";
+      extraContainer.style.opacity = "0";
+    } else {
+      extraContainer.style.visibility = "visible";
+      extraContainer.style.opacity = "1";
+    }
+  });
+});

@@ -11,6 +11,27 @@ $(document).ready(function(){
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取按钮和额外内容元素
+    var toggleButton = document.getElementById("toggleButton");
+    var extraContainer = document.querySelector(".extra-container");
+  
+    // 点击按钮时切换额外内容的可见性
+    toggleButton.addEventListener("click", function() {
+      // 获取计算后的样式
+      var computedStyle = window.getComputedStyle(extraContainer);
+  
+      // 如果额外内容当前可见，则隐藏；否则显示
+      if (computedStyle.visibility === "visible" || extraContainer.style.visibility === "visible") {
+        extraContainer.style.visibility = "hidden";
+        extraContainer.style.opacity = "0";
+      } else {
+        extraContainer.style.visibility = "visible";
+        extraContainer.style.opacity = "1";
+      }
+    });
+  });
+  
 
 
 const canvas = document.getElementById("canvas");

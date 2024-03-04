@@ -13,24 +13,57 @@ body{
   display: none;
 }
 .menu{
-  display: flex;
-width: 313px;
-padding: 10.631px 21.262px;
-align-items: center;
-gap: 646.144px;
-  position:fixed;
-  z-index: 999;
-  border-radius: 0.25rem 624.9375rem 624.9375rem 0.1875rem;
-border-bottom: 2px solid #FFF;
-background: #BFA584;
-box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
+  position: fixed;
 }
 
-.menu-left{
-  display: flex;
-align-items: flex-start;
-gap: 90.162px;
+.left{
+  stroke-width: 1px;
+  stroke: #D94033;
+  width: 35px;
+position: absolute;
+top:505%;
+left:620px;
 }
+
+.back-container{
+  padding-bottom: 20rem;
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+gap: 32px;
+}
+
+.right{
+  stroke-width: 1px;
+  stroke: #D94033;
+  width: 35px;
+position: absolute;
+top:505%;
+left:870px;
+}
+
+
+
+.hex {
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 500%;
+  left: 722px;
+  animation: rotateAnimation 3s infinite linear;
+  transform-origin: center; 
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .name{
   color: #FFF;
   font-family: "sepian", sans-serif;
@@ -73,7 +106,6 @@ cursor: pointer;
   background-color: #FFECD5; /* 切换的背景颜色 */
 }
 
-
 .author{
   color: #FFF;
 text-align: center;
@@ -87,12 +119,12 @@ line-height: normal;
 .author span{
   color: #FFF;
   font-family: "sepian", sans-serif;
-font-weight: 400;
-font-style: normal;
-  font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  font-style: normal;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+
 }
 
 .intro{
@@ -102,65 +134,74 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+width: 13.25rem;
 width: 212px;
 }
 
 .extra-container{
-  border-radius: 0px 6px 45px 6px;
+  border-top: 2px solid #FFF;
 border-bottom: 2px solid #FFF;
-background: #BFA584;
-box-shadow: 0px -2px 20px 0px rgba(255, 255, 255, 0.50) inset;
-  display: flex;
-  padding: 9px 14px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 27px;
+background: #D94033;
+display: inline-flex;
+padding: 9px 9px;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.6875rem;
 z-index: 999;
 position:absolute;
-top:67.26px;
-left:20.5px;
+top:129.92px;
+left:17.92px;
+width:240px;
 opacity:1;
 }
 
+/* 额外内容初始状态隐藏 */
 .extra-container {
   visibility: hidden;
-  opacity: 0; /* 添加 opacity 属性，使其淡出 */
-  transition: visibility 0s, opacity 0.5s ease-in; 
-  /* your extra container styles */
+  opacity: 0;
+  transition: opacity 1s ease-out;
 }
 
-/* 悬停时显示 */
-.name:hover ~ .extra-container {
-  visibility: visible;
-  opacity: 1; /* 添加 opacity 属性，使其淡入 */
-  transition-delay: 0s; /* 鼠标悬停时立即开始过渡 */
+
+.title{
+  color: #F0F0F0;
+text-align: center;
+font-family: "sepian", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 32px;
+line-height: normal;
+position: absolute;
+left: 54px;
+top: 6px;
+width: 110px;
+z-index: 999;
+cursor: pointer;
 }
 
-/* 鼠标离开后保持显示 2 秒钟 */
-.extra-container:hover {
-  visibility: visible;
-  opacity: 1;
+.switch{
+  color: #F0F0F0;
+font-family: "Hepta Slab";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute;
+left: 101px;
+top: 88px;
+transform: rotate(180deg);
+z-index: 999;
+cursor: pointer;
 }
 
-/* 2 秒钟后隐藏 */
-.extra-container:not(:hover) {
-  /* transition-delay: 2s;  */
-  /* transition: opacity 1s ease-out; */
-}
+.tag{
+  position: absolute;
+  top:-40px;
+  left: 10px;
+width: 200px;
+height: 200px;
 
-.menu {
-  opacity: 1; /* 初始透明度为1 */
-  transition: opacity 2s;
 }
-
-.menu:not(:hover) {
-  opacity: 0; /* 当不处于鼠标悬停状态时，透明度为0 */
-}
-
-.menu:hover {
-  opacity: 1; /* 鼠标悬停时透明度为1 */
-}
-
 a.name {
   text-decoration: none; /* 去掉默认的下划线 */
 }
@@ -1094,6 +1135,38 @@ z-index: 999;
 position: absolute;
 top:30%;
 left:150px;
+animation: rotateAnimation 3s infinite linear;
+  }
+
+  .back-container-m{
+    padding-bottom: 20rem;
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  height: 500px;
+  }
+
+  .left-m{
+    stroke-width: 1px;
+    stroke: #D94033;
+    width: 35px;
+  position: absolute;
+  top:330%;
+  left:100px;
+  margin-bottom: 100px;
+  }
+  
+
+  
+  .right-m{
+    stroke-width: 1px;
+    stroke: #D94033;
+    width: 35px;
+  position: absolute;
+  top:330%;
+  right:100px;
+  margin-bottom: 100px;
   }
 
   .quote-container-m{
@@ -1103,14 +1176,13 @@ align-items: center;
 gap: 22px;
 position: absolute;
 top:298px;
-left: 31px;
   }
 
   .decoline1-m{
     width: 232px;
-height: 0px;
-position: relative;
+position: absolute;
 top:0;
+left: 71.5px;
 z-index: 888;
 stroke-width: 1px;
 stroke: #D94033;
@@ -1118,10 +1190,9 @@ stroke: #D94033;
 
   .decoline2-m{
     width: 232px;
-height: 0px;
 position: absolute;
-top:198px;
-left:50%;
+top:154px;
+left: 71.5px;
 stroke-width: 1px;
 stroke: #D94033;
   }
@@ -1129,7 +1200,7 @@ stroke: #D94033;
   .quote{
     text-indent: 20px;
     position: absolute;
-    left:41px;
+    left:71px;
     top:40px;
     color: #D94033;
 font-family: Sepian;
