@@ -3,6 +3,10 @@ html, body{
   font-family: "Hepta Slab", sans-serif;
 }
 
+.mobile{
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
